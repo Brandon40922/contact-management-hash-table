@@ -1,0 +1,9 @@
+# Contact Management Hash Table – Design Memo
+
+For this assignment, I created a contact management system using a hash table in Python. The purpose of the program was to store and retrieve contacts quickly without using Python's built-in dictionary. Each contact contains a name and phone number, and the hash table organizes them based on their names.
+
+A hash table is useful for fast lookups because it uses a hash function to calculate where information should be stored. Instead of searching through every contact one by one, the program can go directly to the correct index. This makes searching faster, especially when there are many contacts stored in the system.
+
+One challenge I had to handle was collisions. A collision happens when two different contact names produce the same index. I handled this problem using separate chaining with linked lists. When two contacts share an index, they are stored in different nodes connected together. The program searches through those nodes to find the correct contact. I also made sure that inserting a contact with an existing name updates the phone number instead of creating a duplicate.
+
+An engineer might choose a hash table over a list or tree when fast searching is the main priority. Lists are useful for storing information in order, but searching through them can take longer. Trees are helpful for organizing hierarchical or sorted information. Hash tables work especially well for contact lists, user accounts, and other systems where information needs to be retrieved quickly by a specific key. Overall, this assignment helped me better understand hashing, collisions, and linked lists.
